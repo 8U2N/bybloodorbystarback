@@ -19,7 +19,7 @@ CORS(app)
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 app.config['JWT_SECRET_KEY'] = 'd7ed3faa31b8e1cd4a19493071cbaa40ef58'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'app.sqlite')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://jfjfqbldewwkxp:703bebc6072fad6b4500f0a234b6bb3d70d6d35b44d1fc4ae560521d8e2da8a0@ec2-54-227-248-71.compute-1.amazonaws.com:5432/d4tqr6liaujnkv'
 
 
 # _____________
