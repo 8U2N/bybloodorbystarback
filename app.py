@@ -1,3 +1,4 @@
+from dotenv import load_dotenv
 from flask import Flask, request, jsonify, session
 from flask_jwt_extended import create_access_token
 from flask_jwt_extended import get_jwt_identity
@@ -17,7 +18,7 @@ db = SQLAlchemy(app)
 ma = Marshmallow(app)
 CORS(app)
 
-app.config['JWT_SECRET_KEY'] = 'd7ed3faa31b8e1cd4a19493071cbaa40ef58'
+app.config['JWT_SECRET_KEY'] = load_dotenv
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://jfjfqbldewwkxp:703bebc6072fad6b4500f0a234b6bb3d70d6d35b44d1fc4ae560521d8e2da8a0@ec2-54-227-248-71.compute-1.amazonaws.com:5432/d4tqr6liaujnkv'
 
 
